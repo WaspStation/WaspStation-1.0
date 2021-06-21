@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item&#x2F;bodypart - White Sands</title>
+</head>
+<body>
+<header>
+    <a href="index.html">White Sands</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item/bodypart.html#var">Var Details</a> - <a href="obj/item/bodypart.html#proc">Proc Details</a></header>
+<main>
+<h1>limb <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/bodypart.html">bodypart</a></aside>
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 2"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/item/bodypart.html#var/bodypart_disabled">bodypart_disabled</a></th><td>If disabled, limb is as good as missing.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#var/can_be_disabled">can_be_disabled</a></th><td>Controls whether bodypart_disabled makes sense or not for this limb.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#var/disable_threshold">disable_threshold</a></th><td>Multiplied by max_damage it returns the threshold which defines a limb being disabled or not. From 0 to 1.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#var/last_maxed">last_maxed</a></th><td>So we know if we need to scream if this limb hits max damage</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_owner_easylimbwound_trait_gain">on_owner_easylimbwound_trait_gain</a></th><td>Called when TRAIT_EASYLIMBDISABLE is added to the owner.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_owner_easylimbwound_trait_loss">on_owner_easylimbwound_trait_loss</a></th><td>Called when TRAIT_EASYLIMBDISABLE is removed from the owner.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_owner_nolimbdisable_trait_gain">on_owner_nolimbdisable_trait_gain</a></th><td>Called when TRAIT_NOLIMBDISABLE is added to the owner.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_owner_nolimbdisable_trait_loss">on_owner_nolimbdisable_trait_loss</a></th><td>Called when TRAIT_NOLIMBDISABLE is removed from the owner.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_paralysis_trait_gain">on_paralysis_trait_gain</a></th><td>Called when TRAIT_PARALYSIS is added to the limb.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/on_paralysis_trait_loss">on_paralysis_trait_loss</a></th><td>Called when TRAIT_PARALYSIS is removed from the limb.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_brute_dam">set_brute_dam</a></th><td>Proc to hook behavior associated to the change of the brute_dam variable's value.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_burn_dam">set_burn_dam</a></th><td>Proc to hook behavior associated to the change of the burn_dam variable's value.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_can_be_disabled">set_can_be_disabled</a></th><td>Proc to change the value of the <code>can_be_disabled</code> variable and react to the event of its change.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_disabled">set_disabled</a></th><td>Proc to change the value of the <code>disabled</code> variable and react to the event of its change.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_owner">set_owner</a></th><td>Proc to change the value of the <code>owner</code> variable and react to the event of its change.</td></tr>
+            <tr><th><a href="obj/item/bodypart.html#proc/set_stamina_dam">set_stamina_dam</a></th><td>Proc to hook behavior associated to the change of the stamina_dam variable's value.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/bodypart_disabled"><aside class="declaration">var </aside>bodypart_disabled
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 31"/></a></h3>
+        <p>If disabled, limb is as good as missing.</p><h3 id="var/can_be_disabled"><aside class="declaration">var </aside>can_be_disabled
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 35"/></a></h3>
+        <p>Controls whether bodypart_disabled makes sense or not for this limb.</p><h3 id="var/disable_threshold"><aside class="declaration">var </aside>disable_threshold
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 33"/></a></h3>
+        <p>Multiplied by max_damage it returns the threshold which defines a limb being disabled or not. From 0 to 1.</p><h3 id="var/last_maxed"><aside class="declaration">var </aside>last_maxed
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 29"/></a></h3>
+        <p>So we know if we need to scream if this limb hits max damage</p><h2 id="proc">Proc Details</h2><h3 id="proc/on_owner_easylimbwound_trait_gain"><aside class="declaration">proc </aside>on_owner_easylimbwound_trait_gain<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L412">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 412"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_EASYLIMBDISABLE is added to the owner.</p><h3 id="proc/on_owner_easylimbwound_trait_loss"><aside class="declaration">proc </aside>on_owner_easylimbwound_trait_loss<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L420">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 420"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_EASYLIMBDISABLE is removed from the owner.</p><h3 id="proc/on_owner_nolimbdisable_trait_gain"><aside class="declaration">proc </aside>on_owner_nolimbdisable_trait_gain<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L400">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 400"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_NOLIMBDISABLE is added to the owner.</p><h3 id="proc/on_owner_nolimbdisable_trait_loss"><aside class="declaration">proc </aside>on_owner_nolimbdisable_trait_loss<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L406">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 406"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_NOLIMBDISABLE is removed from the owner.</p><h3 id="proc/on_paralysis_trait_gain"><aside class="declaration">proc </aside>on_paralysis_trait_gain<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/bodypart.html">bodypart</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L386">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 386"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_PARALYSIS is added to the limb.</p><h3 id="proc/on_paralysis_trait_loss"><aside class="declaration">proc </aside>on_paralysis_trait_loss<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/bodypart.html">bodypart</a>/source) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L393">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 393"/></a></aside>
+        </h3>
+        <p>Called when TRAIT_PARALYSIS is removed from the limb.</p><h3 id="proc/set_brute_dam"><aside class="declaration">proc </aside>set_brute_dam<aside>(new_value) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L244">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 244"/></a></aside>
+        </h3>
+        <p>Proc to hook behavior associated to the change of the brute_dam variable's value.</p><h3 id="proc/set_burn_dam"><aside class="declaration">proc </aside>set_burn_dam<aside>(new_value) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L252">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 252"/></a></aside>
+        </h3>
+        <p>Proc to hook behavior associated to the change of the burn_dam variable's value.</p><h3 id="proc/set_can_be_disabled"><aside class="declaration">proc </aside>set_can_be_disabled<aside>(new_can_be_disabled) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L358">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 358"/></a></aside>
+        </h3>
+        <p>Proc to change the value of the <code>can_be_disabled</code> variable and react to the event of its change.</p><h3 id="proc/set_disabled"><aside class="declaration">proc </aside>set_disabled<aside>(new_disabled) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L303">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 303"/></a></aside>
+        </h3>
+        <p>Proc to change the value of the <code>disabled</code> variable and react to the event of its change.</p><h3 id="proc/set_owner"><aside class="declaration">proc </aside>set_owner<aside>(new_owner) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L315">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 315"/></a></aside>
+        </h3>
+        <p>Proc to change the value of the <code>owner</code> variable and react to the event of its change.</p><h3 id="proc/set_stamina_dam"><aside class="declaration">proc </aside>set_stamina_dam<aside>(new_value) 
+        
+    
+            <a href="https://github.com/Whitesands13/Whitesands/blob/97cf378f1c29a93ed56d1200d20f2e244aa00b97/code/modules/surgery/bodyparts/_bodyparts.dm#L260">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;bodyparts&#x2F;_bodyparts.dm 260"/></a></aside>
+        </h3>
+        <p>Proc to hook behavior associated to the change of the stamina_dam variable's value.</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Whitesands13/Whitesands/tree/97cf378f1c29a93ed56d1200d20f2e244aa00b97">97cf378</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.3.0</a></footer>
+</body>
+</html>
